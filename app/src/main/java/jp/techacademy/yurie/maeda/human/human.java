@@ -14,7 +14,10 @@ class Human extends Animal implements Thinkable{
     public Human(String name, int age) {
         this.name = name;
         this.age = age;
-        hobby = "";
+    }
+
+    public Human(String hobby) {
+        this.hobby = hobby;
     }
 
 
@@ -24,8 +27,7 @@ class Human extends Animal implements Thinkable{
     }
 
     @Override
-    public  void think(){
-        this.hobby = "映画";
+    public void think(){
         Log.d("javatest","私は" + this.hobby + "について考える");
     }
 }

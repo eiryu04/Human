@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
         Human human = new Human("エミリー", 23); //Humanのインスタンスを作る
         human.say();  // ログ出力
+
+        Human hobby = new Human("映画");
         human.think();
     }
 }
